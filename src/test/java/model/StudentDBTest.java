@@ -21,12 +21,4 @@ class StudentDBTest {
                 "Student ID: 3, First Name: Albert3, Last Name: Einstein3, Age: 145 \n";
         Assertions.assertEquals(expected, actual);
     }
-
-    @Test
-    void randomStudent() {
-        //Wie kann man randomStudent testen?!
-        //Given
-        //When
-        //Then
-    }
 }

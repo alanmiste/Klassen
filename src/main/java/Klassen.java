@@ -1,3 +1,4 @@
+import model.ComputerScienceStudent;
 import model.Student;
 import model.StudentDB;
 
@@ -23,6 +24,9 @@ public class Klassen {
 
         //print a random student
         System.out.println("This is a random student: "+dbTest.randomStudent());
+
+        ComputerScienceStudent csStudent = new ComputerScienceStudent(3,"Charlie", "Chaplin",133,"Java");
+        System.out.println(csStudent);
     }
 
 }
