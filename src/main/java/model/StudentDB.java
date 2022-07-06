@@ -10,7 +10,7 @@ public class StudentDB {
         Student student1 = new Student(1,"Albert","Einstein",143);
         Student student2 = new Student(2,"Albert2","Einstein2",144);
         Student student3 = new Student(3,"Albert3","Einstein3",145);
-        this.studentArray = new ArrayList();
+        this.studentArray = new ArrayList<>();
         this.studentArray.add(student1);
         this.studentArray.add(student2);
         this.studentArray.add(student3);
