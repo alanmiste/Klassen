@@ -1,17 +1,22 @@
 package model;
 
+import java.util.ArrayList;
+
 public class StudentDB {
 
-    private Student[] studentArray;
+    private ArrayList<Student> studentArray;
 
     public StudentDB(){
         Student student1 = new Student(1,"Albert","Einstein",143);
         Student student2 = new Student(2,"Albert2","Einstein2",144);
         Student student3 = new Student(3,"Albert3","Einstein3",145);
-        this.studentArray = new Student[]{student1, student2, student3};
+        this.studentArray = new ArrayList();
+        this.studentArray.add(student1);
+        this.studentArray.add(student2);
+        this.studentArray.add(student3);
     }
 
-    public Student[] getAllStudents(){
+    public ArrayList<Student> getAllStudents(){
 //        for(int i=0; i<this.studentArray.length; i++)
 //            for (int j=0; j<this.studentArray[i].length; j++){
 //                System.out.println(this.studentArray[i][j]);
@@ -22,15 +27,15 @@ public class StudentDB {
     @Override
     public String toString(){
         String students="";
-        for(int i=0; i<this.studentArray.length; i++)
+        for(int i=0; i<this.studentArray.size(); i++)
             {
-                students += this.studentArray[i]+" \n";
+                students += this.studentArray.get(i)+" \n";
             }
         return students;
     }
 
     public Student randomStudent(){
-        return this.studentArray[(int) (Math.random() * this.studentArray.length)];
+        return this.studentArray.get((int) (Math.random() * this.studentArray.size()));
     }
 
 
